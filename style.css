@@ -1,0 +1,498 @@
+/* -----------------------google font link ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*----------------------- common styles ----------------------- */
+* {
+    transition: width 1s;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+
+/*----------------------- Styles for header section-----------------------  */
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+    background: #2D25A0;
+    padding: 130px 140px 90px 155px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+.top-left , .top-right {
+    width: 500px;
+}
+.top-left {
+    width: 485px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 110px;
+}
+.top-left h1 {
+    font-size: 64px;
+    line-height: 130%;
+    color: white;
+    margin: 0;
+    margin-bottom: 27px;
+}
+.button {
+    text-decoration: none;
+    display: flex;
+    padding: 10px 10px;
+    background: #E02C6D;
+    color: white;
+    border: none;
+    width: 35%;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.fas {
+    font-size: 24px;
+}
+.button:hover {
+    background: #cc2562;
+}
+.top-right {
+    width: 560px;
+}
+.top-right img {
+    width: 100%;
+}
+.top-banner:hover #copa-text {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+/*----------------------- Header section ends-----------------------  */
+
+
+/* -----------------------Style for players section ----------------------- */
+
+.players-container {
+    width: auto;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 27px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 20px;
+}
+.box {
+    width: 310px;
+    height: 500px;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 15px;
+}
+.box img {
+    width: 100%;
+    border-radius: 10px;
+}
+.box h2 {
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+    margin: 16px 0 10px 0;
+}
+.box p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+    margin-top: 0;
+    line-height: 170%;
+}
+
+/* -----------------------Players sectione ends-----------------------  */
+
+
+/* -----------------------Styles for highlights section-----------------------  */
+
+.highlights {
+    margin-top: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.highlights-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+}
+.highlights-text h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #0A0826;
+    margin: 0;
+    
+}
+.highlights-text p {
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    line-height: 170%;
+    text-align: justify;
+    padding-right: 130px;
+}
+.highlights-img {
+    width: 600px;
+    margin-left: 50px;
+}
+.highlights-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* -----------------------Highlights section ends-----------------------  */
+
+
+/* -----------------------Styles for gallery section-----------------------  */
+
+.gallery-container {
+    margin-top: 140px;
+}
+.gallery-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #0A0826;
+    text-align: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 0px 10px;
+}
+.gal-pic {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gal-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* -----------------------Gallery section ends-----------------------  */
+
+
+
+
+
+/* -----------------------Styles for footer section-----------------------  */
+
+footer {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 63px;
+}
+.footer-img {
+    width: 480px;
+}
+.footer-img img {
+    width: 100%;
+}
+.footer-icons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+.footer-icons a {
+    text-decoration: none;
+}
+.fab {
+    font-size: 22px;
+    color: #969BAB;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* -----------------------Footer sections ends-----------------------  */
+
+
+/* -----------------------Media queries for laptop-1024px-----------------------  */
+
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+    .top-banner {
+        padding-left: 80px;
+        padding-right: 80px;
+        align-items: center;
+    }
+    .top-left h1 {
+        font-size: 48px;
+    }
+    .top-left {
+        width: 380px;
+    }
+    .top-right {
+        width: 380px;
+    }
+    .players-container {
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .box {
+        width: 275px;
+    }
+    .highlights-text {
+        width: 450px;
+    }
+    .highlights-img {
+        width: 450px;
+        margin-left: 20px;
+    }
+    .highlights-text h1 {
+        font-size: 36px;
+    }
+    .highlights-text p {
+        padding-right: 70px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .videos-container {
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .video-box {
+        width: 275px;
+    }
+    .fab {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+/*----------------------- Media Queries for Tablet -----------------------*/
+
+@media only screen and (min-width:688px) and (max-width:1023px) {
+    
+    .top-banner {
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .top-left {
+        margin: 0;
+        width: 320px;
+    }
+    .top-left h1 {
+        font-size: 35px;
+    }
+    .top-left a {
+        font-size: 15px;
+    }
+    .top-right {
+        margin-left: 50px;
+        width: 320px;
+    }
+    .players-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box {
+        width: 300px;
+    }
+    .highlights {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .highlights-text h1 {
+        font-size: 36px;
+    }
+    .highlights-text p {
+        padding-right: 10px;
+    }
+    .highlights-text {
+        margin-bottom: 50px;
+        justify-content: center;
+        width: 600px;
+    }
+    .highlights-img {
+        width: 600px;
+        margin-left: 0;
+    }
+    .highlights-img img {
+        height: 400px;
+    }
+    .gallery-container h2 {
+        font-size: 35px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gal-pic {
+        width: 320px;
+        height: 200px;
+    }
+    .videos-container h2 {
+        font-size: 35px;
+    }
+    .videos {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .video-box {
+        width: 320px;
+    }
+    .video-title h2 {
+        font-size: 18px;
+    }
+    .footer-img {
+        width: 350px;
+    }
+    .footer-icons {
+        width: 220px;
+    }
+    .fab {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+/*----------------------- Media queries for Mobiles -----------------------  */
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .top-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .top-left {
+        margin: 0;
+        width: 280px;
+        justify-content: center;
+    }
+    .top-left a {
+        width: 130px;
+    }
+    .top-left h1 {
+        font-size: 36px;
+    }
+    .top-right {
+        margin-top: 80px;
+        margin-left: 0;
+        width: 280px;
+    }
+    .players-container {
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .box {
+        width: 250px;
+        height: 440px;
+    }
+    .box h2 {
+        font-size: 26px;
+    }
+    .box p {
+        font-size: 15px;
+    }
+    .highlights {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .highlights-text {
+        margin-bottom: 50px;
+        width: 250px;
+    }
+    .highlights-text h1 {
+        font-size: 28px;
+    }
+    .highlights-text p {
+        padding-right: 5px;
+    }
+    .highlights-text a {
+        width: 150px;
+    }
+    .highlights-img {
+        width: 250px;
+        margin-left: 0;
+    }
+    .gallery-container h2 {
+        font-size: 30px;
+    }
+    .gallery {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gal-pic {
+        width: 280px;
+        height: 180px;
+    }
+    .videos-container h2 {
+        font-size: 30px;
+    }
+    .videos {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .video-title h2 {
+        font-size: 16px;
+    }
+    .video-box {
+        width: 260px;
+        height: 350px;
+    }
+    .footer-img {
+        width: 250px;
+    }
+    .footer-icons {
+        width: 180px;
+    }
+    .fab {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .footer-text p{
+        font-size: 15px;
+    }
+}
